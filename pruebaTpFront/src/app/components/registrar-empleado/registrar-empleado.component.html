@@ -1,0 +1,63 @@
+<form #createEmpleadosForm="ngForm" (ngSubmit)="createStudent()">
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="documentEmpleado">Documento</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="documentEmpleado" id="documentEmpleado" placeholder="documento del empleado" [(ngModel)]="empleado.documento">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="nameEmpleado">Nombre</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="nameEmpleado" id="nameEmpleado" placeholder="nombre del empleado" [(ngModel)]="empleado.nombres">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="lastnameEmpleado">Apellidos</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="lastnameEmpleado" id="lastnameEmpleado" placeholder="apellido del empleado" [(ngModel)]="empleado.apellidos">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="fechaIniEmpleado">Fecha inicial</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="date" name="fechaIniEmpleado" id="fechaIniEmpleado" placeholder="fecha inicial" [(ngModel)]="empleado.fechaIni">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="fechaFinEmpleado">Fecha final</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="date" name="fechaFinEmpleado" id="fechaFinEmpleado" placeholder="fecha fin" [(ngModel)]="empleado.fechaFin">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="iniTurnoEmpleado">Horario inicio de turno</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="iniTurnoEmpleado" id="iniTurnoEmpleado" placeholder="Horario inicio de turno" [(ngModel)]="empleado.iniTurno">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="finTurnoEmpleado">Horario fin de turno</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="finTurnoEmpleado" id="finTurnoEmpleado" placeholder="Horario fin de turno" [(ngModel)]="empleado.finTurno">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="iniExtraEmpleado">Horario inicio hora extra</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="iniExtraEmpleado" id="iniExtraEmpleado" placeholder="Horario inicio hora extra" [(ngModel)]="empleado.iniExtra">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="finExtraEmpleado">Horario fin hora extra</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="finExtraEmpleado" id="finExtraEmpleado" placeholder="Horario fin hora extra" [(ngModel)]="empleado.finExtra">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="motivoExtraEmpleado">Motivo hora extra</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="motivoExtraEmpleado" id="motivoExtraEmpleado" placeholder="Motivo hora extra" [(ngModel)]="empleado.motivoExtra">
+        </div>
+    </div>
+    <button type="submit" class="btn-btn-primary">Registrar</button>
+</form>
